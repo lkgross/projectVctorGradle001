@@ -41,4 +41,12 @@ public class Vctor {
         }
         return Math.sqrt(x);
     }
+
+    public double dotProduct(Vctor other){
+        double sum = 0.0;
+        for (int i = 0; i < elements.length; i++) {
+            sum += elements[i] * other.elements[i];
+        }
+        return sum;
+    }
 }
