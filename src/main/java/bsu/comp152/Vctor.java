@@ -15,12 +15,8 @@ public class Vctor {
         }
     }
 
-    public double geometricLength() {
-        double x = 0.0;
-        for (int i = 0; i < elements.length; i++) {
-            x += Math.pow(elements[i], 2);
-        }
-        return Math.sqrt(x);
+    public int getDimension(){
+        return elements.length;
     }
 
     @Override
@@ -36,5 +32,13 @@ public class Vctor {
             vect.elements[i] = elements[i] + other.elements[i];
         }
         return vect;
+    }
+
+    public double geometricLength() {
+        double x = 0.0;
+        for (int i = 0; i < elements.length; i++) {
+            x += Math.pow(elements[i], 2);
+        }
+        return Math.sqrt(x);
     }
 }
