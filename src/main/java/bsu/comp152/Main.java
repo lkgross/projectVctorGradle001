@@ -28,10 +28,8 @@ public class Main {
         System.out.println("Their sum is: ");
         System.out.println(vect1.addVector(vect2));
 
-
-
         System.out.println();
 
-
+        System.out.println(vect1.dotProduct(vect2));
     }
 }
